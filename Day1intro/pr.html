@@ -1,0 +1,38 @@
+<script>
+let stockApel = 10
+let stockAnggur = 10
+let stockJeruk = 10
+
+const hargaApel = 10000
+const hargaAnggur = 15000
+const hargaJeruk = 20000
+
+let input1 = parseInt(prompt("Masukan Jumlah Apel"))
+    if (input1>stockApel){input1 = stockApel}
+        alert(`Stok apel maksimum adalah ${stockApel}`)
+let input2 = parseInt(prompt("Masukan Jumlah Anggur"))
+    if (input2>stockAnggur){input2 = stockAnggur}
+        alert(`Stok anggur maksimum adalah ${stockAnggur}`)
+let input3 = parseInt(prompt("Masukan Jumlah Jeruk"))
+    if (input3>stockJeruk){input3 = stockJeruk}
+        alert(`Stok jeruk maksimum adalah ${stockJeruk}`)
+
+let hasil1 = (hargaApel*input1)
+let hasil2 = (hargaAnggur*input2)
+let hasil3 = (hargaJeruk*input3)
+let hasilTotal = (hasil1 + hasil2 + hasil3)
+
+alert(`Total Apel ${hasil1} \n Total Anggur ${hasil2} \n Total Jeruk ${hasil3} \n Total ${hasilTotal}`)
+
+let inputHarga = prompt("Masukan Uang")
+let statusUang
+inputHarga = parseInt(inputHarga)
+
+if (inputHarga>hasilTotal){statusUang = `Uang anda lebih tunggu kembaliannya`}
+    else if (inputHarga==hasilTotal){statusUang = `Uang anda pas`}
+        else {statusUang = `Uang anda kurang`}
+
+alert(statusUang, inputHarga)
+
+
+</script>

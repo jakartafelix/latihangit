@@ -1,0 +1,9 @@
+data types: string, number, boolean
+variable stores data
+press ctrl + / to make a comment
+++ -- increment decrement
+if, else if, else (executed once condition is met)
+falsy: zero, empty string, null, undefined, NaN
+While, Do While, For (If True keeps on repeating)
+
+
